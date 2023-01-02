@@ -1,18 +1,24 @@
 {
   "name": "learnscript",
   "version": "0.1.0",
+  "homepage": "http://Kesa02092020.github.io/mytodoapp",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "gh-pages": "^4.0.0",
     "next": "13.0.6",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0"
   }
 }
